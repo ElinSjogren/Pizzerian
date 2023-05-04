@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <script src="../JavaScript/laddaData.js" defer></script>
+    <title>Pizzerian - Startsida</title>
+    <link rel="stylesheet" href="../stilmall.css">
+</head>
+<header>
+    <div id="loggaOchNamn">
+        <img src="../Images/logga1.png" id="logga" alt="Pizzerians logga och symbol">
+        <h1>Pizzerian</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html" tabindex="1">Hem</a></li>
+            <li><a href="meny.html" tabindex="2">Meny</a></li>
+            <li><a href="beställ.html" tabindex="3">Beställ</a></li>
+            <li><a href="kontakt.html" tabindex="4">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div id="beställning-yttre">
+        <h2>Beställning</h2>
+        <p>Här beställer ni den berömda pizzan från Burseryds finaste pizzeria!<br>
+        Vi börjar baka när vi får in er swish-betalning.</p>
+        <form id="beställningsformulär">
+            <label for="varor">Varor: (Nummer mellanslag nummer) </label><br>
+            <input type="text" id="varor" name="varor" tabindex="5"><br>
+            <label for="fnamn">Förnamn: </label><br>
+            <input type="text" id="fnamn" name="fnamn" tabindex="6"><br>
+            <label for="mobilnummer">Mobilnummer:</label><br>
+            <input type="text" id="mobilnummer" name="mobilnummer" tabindex="7"><br>
+            <label for="allergi">Allergi:</label><br>
+            <input type="text" id="allergi" name="allergi" tabindex="8"><br>
+            <br>
+            <button id="beställknapp"><a href="tacksida.html" tabindex="9">Beställ</a></button>
+        </form>
+    </div>
+</body>
+<footer>
+    <p>Beställ i vårt formulär!</p>
+  </footer>
+</html>

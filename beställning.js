@@ -1,0 +1,1 @@
+const beställtryck = document.getElementById("beställknapp");
