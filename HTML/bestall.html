@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pizzerian - Startsida</title>
+        <script src="../JavaScript/bestallning.js" defer></script>
+        <link rel="stylesheet" href="../stilmall.css" />
+    </head>
+    <body>
+        <header>
+            <div id="loggaOchNamn">
+                <img src="../Images/logga1.png" id="logga" alt="Pizzerians logga och symbol" />
+                <h1>Pizzerian</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html" tabindex="1">Hem</a></li>
+                    <li><a href="meny.html" tabindex="2">Meny</a></li>
+                    <li><a href="bestall.html" tabindex="3">Beställ</a></li>
+                    <li><a href="kontakt.html" tabindex="4">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="beställning-yttre">
+            <h2>Beställning</h2>
+            <p>
+                Här beställer ni den berömda pizzan från Burseryd!<br />
+                Vi börjar baka när vi får in er swish-betalning.
+            </p>
+            <form id="bestallningsformular">
+                <label for="varor">Varor: (Nummer mellanslag nummer) </label> <input type="text" id="varor" name="varor" tabindex="5" /><br />
+                <label for="fnamn">Förnamn: </label> <input type="text" id="fnamn" name="fnamn" tabindex="6" /><br />
+                <label for="mobilnr">Mobilnummer:</label> <input type="text" id="mobilnr" name="mobilnr" tabindex="7" /><br />
+                <label for="allergi">Allergi:</label> <input type="text" id="allergi" name="allergi" tabindex="8" /><br />
+                <div id="checkmarkWrapp"><span id="checkmark" class="gömd">&#10003;</span></div>
+                <br />
+                <input type="submit" id="bestallknapp" value="Skicka beställning"/> 
+                <input type="button" onclick="window.location.href='tacksida.html';" id="tillTack" tabindex="10" value="Betala" />
+                
+            </form>
+        </div>
+        <footer><p>Beställ i vårt formulär!</p></footer>
+    </body>
+</html>

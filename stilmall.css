@@ -1,0 +1,336 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+img {
+  
+    display: block;
+    max-width: 90%;
+    height: auto;
+    border-radius: 2rem;
+}
+@font-face {
+    font-family: titelFont;
+    src: url(glossy_sheen/Glossy\ Sheen\ Shine\ DEMO.ttf);
+}
+@font-face {
+    font-family: textFont;
+    src: url(Roboto/Roboto-Black.ttf);
+}
+#loggaOchNamn {
+    gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+body {
+    overflow-x: hidden;
+    background-color: #202020;
+}
+
+#bestallknapp,
+button,
+button a,
+#tillTack {
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: rgb(17, 17, 17);
+    border-radius: 0.5em;
+    height: 5em;
+    width: 10em;
+    background-color: rgb(201, 136, 17);
+    border: none;
+    font-family: titelFont;
+}
+button:hover,
+#tilltack:hover,
+#bestallknapp:hover {
+    background-color: #ffdf6c;
+    box-shadow: 0 0 60px 30px #fff, 0 0 20px 10px rgb(255, 252, 99), 0 0 40px 50px rgb(255, 196, 0);
+    transition: 2s;
+    font-size: 2em;
+}
+#checkmarkWrapp {
+    display: grid;
+    justify-content: center;
+}
+#checkmark {
+    background-color: #ffc800;
+    align-content: end;
+    font-size: 5em;
+    border-radius: 1rem;
+}
+.gömd {
+    visibility: hidden;
+    background-color: #202020;
+    content: none;
+}
+#bestallningsformular,
+#tillTacksidan {
+    display: grid;
+    justify-content: center;
+}
+#beställning-yttre {
+    display: grid;
+    gap: 2em;
+    justify-content: center;
+    margin: 10em;
+}
+input {
+    height: 2em;
+    background-color: antiquewhite;
+    color: #191919;
+    width: 20em;
+}
+label {
+    align-content: baseline;
+}
+p,
+h2 {
+    padding: 1em;
+}
+p,
+h2,
+h3,
+label,
+li,
+a {
+    font-family: textFont;
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: large;
+}
+#välkommen {
+    display: grid;
+    justify-content: center;
+}
+#teaser {
+    font-style: italic;
+    max-width: 25em;
+}
+nav {
+    height: 3em;
+    background-color: #252525;
+    margin: 0;
+}
+ul {
+    height: 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    margin: 0;
+}
+li a {
+    margin-top: 1em;
+    width: inherit;
+}
+#kontaktuppgifter {
+    margin: 3em;
+    border: 1px solid antiquewhite;
+    padding: 1em;
+    width: 70%;
+    background-color: #151515;
+}
+#kontaktbild {
+    border-radius: 1em;
+    width: 75%;
+    margin: 3em;
+}
+header {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100vw;
+    background-color: #191919;
+    color: rgb(255, 182, 73);
+    margin-top: 0;
+    margin-left: 0;
+}
+#attBetala {
+    color: #000;
+    background-color: #ffc800;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    padding: 1em;
+}
+#logga,
+h1 {
+    margin-top: 1em;
+    font-family: titelFont;
+    background-color: #191919;
+    display: inline-block;
+    font-size: 5em;
+}
+#logga {
+    margin-top: 2rem;
+}
+#meny-omslag {
+    display: grid;
+    justify-content: center;
+    gap: 2em;
+}
+#knapp-pos {
+    display: flex;
+    justify-content: center;
+}
+li {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+}
+li:hover {
+    background-color: rgb(102, 67, 26);
+    transition: 0.1s;
+}
+.spanOfTwo {
+    grid-column: span 2;
+}
+.grupp1 {
+    max-width: 90vw;
+    align-content: space-around;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    padding-block: 2rem;
+    margin-inline: auto;
+}
+.grupp1:nth-child(2) {
+    grid-column-start: 2;
+}
+#intro-text {
+    margin: 1em;
+}
+#omOss {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+footer {
+    padding: 1em;
+    background-color: #191919;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+}
+table {
+    background-color: rgb(255, 206, 100);
+    min-width: 50em;
+    border-collapse: collapse;
+    text-align: left;
+}
+th {
+    background-color: #ffc800;
+}
+td,
+th {
+    padding: 1rem;
+    font-family: textfont;
+}
+#tackWrap {
+    display: grid;
+    justify-content: center;
+}
+#qr-kod {
+    display: grid;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 10em;
+}
+tr:nth-of-type(2n) {
+    background: hsla(46, 100%, 50%, 0.247);
+}
+@media (max-width: 999px) {
+    #bild1,
+    #pizzabildIntro2{
+        margin:2rem;
+    }
+
+    #tillTacksidan,
+    #bestallningsformular {
+        display: block;
+        justify-content: center;
+        overflow: hidden;
+    }
+    nav,
+    a,
+    h2,
+    p {
+        font-size: 2em;
+    }
+    label {
+        align-content: baseline;
+        font-size: 2em;
+    }
+    input {
+        width: 90%;
+        height: 3em;
+        font-size: 4em;
+    }
+    header {
+        width: auto;
+    }
+    ul {
+        font-size: large;
+    }
+    img {
+        overflow: hidden;
+        
+    }
+    header {
+        width: 100vw;
+    }
+    #intro {
+        display: block;
+        width: 100vw;
+        
+        font-size: 1em;
+    }
+    #omOss {
+        display: block;
+        width: 100vw;
+        margin:0
+    }
+    th {
+        display: none;
+    }
+    td {
+        display: block;
+        font-family: textFont;
+        font-size: 2em;
+    }
+    td::before {
+        font-family: textFont;
+        font-weight: 800;
+    }
+    #meny-omslag {
+        display: block;
+        width: 80%;
+    }
+    td:nth-of-type(1)::before {
+        content: "Nummer: ";
+    }
+    td:nth-of-type(2)::before {
+        content: "Namn: ";
+    }
+    td:nth-of-type(3)::before {
+        content: "Ingredienser: ";
+    }
+    td:nth-of-type(4)::before {
+        content: "Pris: ";
+    }
+    #attBetala {
+        font-size: 5em;
+    }
+    #tackWrap {
+        display: block;
+    }
+    #qr-kod img {
+        margin-left: 10em;
+    }
+}
